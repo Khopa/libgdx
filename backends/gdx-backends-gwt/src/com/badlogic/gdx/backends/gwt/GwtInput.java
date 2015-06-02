@@ -129,6 +129,11 @@ public class GwtInput implements Input {
 	}
 
 	@Override
+	public boolean isMouseInsideWindow(){
+		return true;
+	}
+
+	@Override
 	public boolean isTouched () {
 		for (int pointer = 0; pointer < MAX_TOUCHES; pointer++) {
 			if (touched[pointer]) {

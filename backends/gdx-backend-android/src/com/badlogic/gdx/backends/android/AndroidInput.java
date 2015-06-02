@@ -268,6 +268,10 @@ public class AndroidInput implements Input, OnKeyListener, OnTouchListener {
 		}
 	}
 
+	public boolean isMouseInsideWindow(){
+		return true;
+	}
+
 	public boolean isTouched (int pointer) {
 		synchronized (this) {
 			return touched[pointer];

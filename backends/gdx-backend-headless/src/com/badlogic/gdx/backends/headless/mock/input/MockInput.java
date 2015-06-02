@@ -83,6 +83,9 @@ public class MockInput implements Input {
 	}
 
 	@Override
+	public boolean isMouseInsideWindow(){ return true; }
+
+	@Override
 	public boolean isTouched() {
 		return false;
 	}

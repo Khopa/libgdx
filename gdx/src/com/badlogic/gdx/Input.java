@@ -608,6 +608,9 @@ public interface Input {
 	/** @return the different between the current pointer location and the last pointer location on the y-axis. */
 	public int getDeltaY (int pointer);
 
+	/** @return whether the mouse is inside the window. */
+	public boolean isMouseInsideWindow();
+
 	/** @return whether the screen is currently touched. */
 	public boolean isTouched ();
 

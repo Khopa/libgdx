@@ -247,6 +247,10 @@ final public class LwjglInput implements Input {
 			return getY();
 	}
 
+	public boolean isMouseInsideWindow(){
+		return Mouse.isInsideWindow();
+	}
+
 	public boolean isTouched (int pointer) {
 		if (pointer > 0)
 			return false;

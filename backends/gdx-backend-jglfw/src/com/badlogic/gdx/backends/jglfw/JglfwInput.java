@@ -186,6 +186,10 @@ public class JglfwInput implements Input {
 		return pointer > 0 ? 0 : deltaY;
 	}
 
+	public boolean isMouseInsideWindow(){
+		return true;
+	}
+
 	public boolean isTouched () {
 		return glfwGetMouseButton(app.graphics.window, 0) || glfwGetMouseButton(app.graphics.window, 1)
 			|| glfwGetMouseButton(app.graphics.window, 2);
